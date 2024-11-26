@@ -6,39 +6,80 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>431</width>
-    <height>392</height>
+    <width>700</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>The Current Sgtk Environment</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
-    <widget class="QLabel" name="logo_example">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resources.qrc">:/res/sg_logo.png</pixmap>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
      </property>
     </widget>
    </item>
    <item>
-    <widget class="QLabel" name="context">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
+    <widget class="QLabel" name="header_label">
      <property name="text">
-      <string>Your Current Context: </string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      <string>Select any Asset in the tree and see the corresponding Tasks</string>
      </property>
     </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="task_list_header">
+         <property name="text">
+          <string>Asset Tree</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTreeView" name="asset_tree_view"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clear_cache_button">
+         <property name="text">
+          <string>Clear Cache</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="asset_tree_header">
+         <property name="text">
+          <string>Associated Tasks</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListView" name="task_list_view"/>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="dynamic_sort_checkbox">
+         <property name="text">
+          <string>Click to toggle setDynamicSortFilter</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="refresh_button">
+         <property name="text">
+          <string>Reload Tasks</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>
