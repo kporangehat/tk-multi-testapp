@@ -1,1 +1,1 @@
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/8baa31b4-f2fc-424f-ab95-ee1076fdf834">
+![CleanShot 2024-11-26 at 16 49 23@2x](https://github.com/user-attachments/assets/a70f3e18-0adc-4236-88b0-2ae515f517f2)
